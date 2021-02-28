@@ -9,7 +9,7 @@ RUN apt-get update &&\
 
 ENV GOPATH /opt/go
 ENV PATH $PATH:$GOPATH/bin
-RUN go get -u github.com/jwilder/docker-gen && go get -u github.com/ddollar/forego
+RUN go get -u github.com/iLem0n/docker-gen && go get -u github.com/ddollar/forego
 
 ADD avahi-daemon.conf /etc/avahi/avahi-daemon.conf
 ADD data/ /opt/app
